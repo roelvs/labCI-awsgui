@@ -16,8 +16,6 @@ function App() {
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
         <div>
           <NavBar />
-          <ServerList region="us-east-1" token={token} apiHost={apiHost}/>
-          <ServerList region="us-east-2" token={token} apiHost={apiHost}/>
 
           <ServerList region="us-west-1" token={token} apiHost={apiHost}/>
           <ServerList region="us-west-2" token={token} apiHost={apiHost}/>
@@ -28,7 +26,16 @@ function App() {
           <ServerList region="ap-southeast-1" token={token} apiHost={apiHost}/>
           <ServerList region="ap-southeast-2" token={token} apiHost={apiHost}/>
 
-          <ServerList region="sa-east-1" token={token} apiHost={apiHost}/>
+            <ServerList region="eu-central-1" token={token} apiHost={apiHost}/>
+            <ServerList region="eu-west-1" token={token} apiHost={apiHost}/>
+            <ServerList region="eu-west-2" token={token} apiHost={apiHost}/>
+            <ServerList region="eu-west-3" token={token} apiHost={apiHost}/>
+            <ServerList region="eu-north-1" token={token} apiHost={apiHost}/>
+
+            <ServerList region="me-south-1" token={token} apiHost={apiHost}/>
+
+            <ServerList region="sa-east-1" token={token} apiHost={apiHost}/>
+          </main>
         </div>
 
       </MuiThemeProvider>

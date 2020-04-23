@@ -69,7 +69,7 @@ const ServerList = (props) => {
 
     if (data.servers.length > 0) {
         return (
-            <div>
+            <section>
                 <h2>{props.region}</h2>
                 <GridList cellHeight={160} className={classes.gridList}>
                     )
@@ -116,7 +116,7 @@ const ServerList = (props) => {
                     })
                     }
                 </GridList>
-            </div>
+            </section>
 
         );
     } else return (<h2>{props.region}: No EC2 machines</h2>)
