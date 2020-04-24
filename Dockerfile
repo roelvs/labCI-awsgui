@@ -19,3 +19,9 @@ COPY --from=build /app/build /usr/share/nginx/html
 COPY dockerfiles/nginx.config /etc/nginx/conf.d/default.conf
 EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
+
+
+
+#docker build --pull --rm -f "Dockerfile" -t labciawsgui:latest --build-arg REACT_APP_APIHOST=https://cloudrun-api-gssmt3brqq-ew.a.run.app/ "."
+#docker run -p 8050:8080 -d --name aws labciawsgui:latest
+#

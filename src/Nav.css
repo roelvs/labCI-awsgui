@@ -1,0 +1,4 @@
+.nav {
+    color: var(--header-text-color) !important;
+    background-color: var(--header-color) !important;
+}

@@ -23,11 +23,15 @@ const useStyles = makeStyles(theme => ({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         overflow: 'hidden',
-        backgroundColor: theme.palette.background.paper,
+    },
+    container: {
+        'padding-bottom': '1rem',
+        'border-bottom': '1px solid gray',
     },
     gridList: {
         width: 500,
         //height: 450,
+        margin: '0 auto',
     },
     icon: {
         color: 'rgba(255, 255, 255, 0.7)',
@@ -69,7 +73,7 @@ const ServerList = (props) => {
 
     if (data.servers.length > 0) {
         return (
-            <div>
+            <section className={classes.container}>
                 <h2>{props.region}</h2>
                 <GridList cellHeight={160} className={classes.gridList}>
                     )
@@ -116,7 +120,7 @@ const ServerList = (props) => {
                     })
                     }
                 </GridList>
-            </div>
+            </section>
 
         );
     } else return (<h2>{props.region}: No EC2 machines</h2>)
